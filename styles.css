@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "Think";
+  src: url("./assets/think.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("./assets/Kollektif.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: oklab(12.12% -0.011 0.01);
+  font-family: "Kollektif", sans-serif;
+  color: oklab(100% 0 0);
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: "Kollektif", sans-serif;
+  color: oklab(100% 0 0);
+  font-weight: 700;
+  text-size-adjust: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: oklab(12.12% -0.011 0.01);
+  margin-block: 60px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(129, 129, 129, 0.5);
+  border-radius: 5px;
+  width: 10px;
+  border: 2px solid oklab(12.12% -0.011 0.01);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(129, 129, 129);
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+::selection {
+  background-color: oklab(38.03% -0.086 0.06);
+}
+
+a {
+  color: inherit;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  border-bottom: rgba(255, 255, 255, 0.1) solid 0.5px;
+  background-color: rgba(12, 18, 9, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0);
+  height: 60px;
+}
+.nav-bar .brand-name {
+  color: oklab(65.05% -0.154 0.12);
+  font-family: "think", serif;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+}
+.nav-bar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-bar .nav-links * {
+  display: inline-block;
+}
+.nav-bar .nav-links li a:hover {
+  color: oklab(50.21% -0.024 -0.22);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4em;
+  margin: 0px 12% 5rem 12%;
+  width: auto;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    margin: 80px 2% 5rem 2%;
+  }
+}
+main .title-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+}
+@media only screen and (max-width: 1000px) {
+  main .title-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main .title-section .title-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 100px 0 100px;
+  }
+}
+main .title-section .title-text .title {
+  font-family: "Kollektif";
+  text-align: left;
+  line-height: 4rem;
+  margin: auto;
+  width: 350px;
+}
+@media only screen and (max-width: 1000px) {
+  main .title-section .title-text .title {
+    text-align: center;
+    width: 90%;
+    margin-inline: margin;
+  }
+  main .title-section .title-text .title .rect1 {
+    display: none;
+  }
+  main .title-section .title-text .title .rect2 {
+    display: none;
+  }
+  main .title-section .title-text .title .size-effect {
+    font-size: 2em;
+  }
+}
+main .title-section .title-text .title .shape-effect {
+  color: oklab(12.12% -0.011 0.01);
+  text-shadow: 0.5px 0.5px 0px oklab(100% 0 0), 1px 1px 0px oklab(100% 0 0), 1.5px 1.5px 0px oklab(100% 0 0), 2px 2px 0px oklab(100% 0 0), 2.5px 2.5px 0px oklab(100% 0 0), 3px 3px 0px oklab(100% 0 0), 3.5px 3.5px 0px oklab(100% 0 0), 4px 4px 0px oklab(100% 0 0);
+}
+main .title-section .title-text .title .shape-effect .rect1 {
+  position: absolute;
+  background-color: transparent;
+  backdrop-filter: invert(100%);
+  width: 90px;
+  height: 36px;
+  transform: translate(80px, -61px);
+}
+main .title-section .title-text .title .shape-effect .rect2 {
+  position: absolute;
+  background-color: transparent;
+  backdrop-filter: invert(100%);
+  width: 130px;
+  height: 35px;
+  transform: translate(170px, -25px);
+}
+main .title-section .title-text .title .size-effect {
+  font-size: 37.92px;
+}
+main .title-section .title-text .subtitle {
+  line-height: 1.75rem;
+}
+main .title-section .title-text .button {
+  padding: 0.5em 2em;
+  border-radius: 0.5rem;
+  background-color: oklab(50.21% -0.024 -0.22);
+  border-style: none;
+  color: oklab(100% 0 0);
+  padding: 0.75rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+main .title-section .title-graphic {
+  position: relative;
+  margin: 4rem 0;
+  background-color: oklab(23.94% -0.033 0.03);
+  border-radius: 30px;
+  border: 4px solid oklab(65.05% -0.154 0.12);
+  max-width: 300px;
+  height: 300px;
+  aspect-ratio: 1;
+  filter: drop-shadow(0 0 4rem oklab(23.94% -0.033 0.03));
+  z-index: -1;
+}
+main .title-section .title-graphic .graphic {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  z-index: -1;
+}
+main .title-section .title-graphic .graphic * {
+  fill: oklab(65.05% -0.154 0.12);
+  filter: drop-shadow(0 0 1rem rgba(49, 172, 49, 0.288));
+}
+main .title-section .title-graphic .graphic .cursor {
+  animation: cursor-blink 1s alternate none infinite;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes cursor-blink {
+  0% {
+    fill: oklab(23.94% -0.033 0.03);
+    filter: drop-shadow(0 0 1rem oklab(23.94% -0.033 0.03));
+  }
+  100% {
+    fill: oklab(87.95% -0.08 0.06);
+    filter: drop-shadow(0 0 1rem oklab(87.95% -0.08 0.06));
+  }
+}
+main .team-section {
+  text-align: center;
+}
+main .team-section .team-members {
+  display: grid;
+  grid-row: 1/1;
+  grid-column: 1/2;
+  grid-auto-flow: column;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+main .team-section .team-members .card {
+  position: relative;
+  display: grid;
+  grid-row: 1/3;
+  grid-column: 1/3;
+  width: calc(min(675px, 60vw) + 6px);
+  height: 343.5px;
+}
+main .team-section .team-members .card * {
+  position: absolute;
+}
+main .team-section .team-members .card p, main .team-section .team-members .card h4, main .team-section .team-members .card h5 {
+  z-index: 3;
+  color: oklab(12.12% -0.011 0.01);
+}
+main .team-section .team-members .card h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+main .team-section .team-members .card h5 {
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3rem;
+}
+main .team-section .team-members .card p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .team-section .team-members .card .background {
+  background-color: oklab(65.05% -0.154 0.12);
+  z-index: 0;
+  width: calc(min(675px, 60vw) + 6px);
+  height: 343.5px;
+  border-radius: 44px;
+}
+main .team-section .team-members .card .card {
+  width: min(675px, 60vw);
+  height: 337.5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  z-index: 1;
+  filter: drop-shadow(0 0 8px #000);
+  backdrop-filter: blur(30px);
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+main .team-section .team-members .card .filter {
+  position: absolute;
+  border-radius: 37px;
+  transform: translate(3px, 3px);
+  width: min(675px, 60vw);
+  height: 337.5px;
+  filter: brightness(40%) opacity(60%);
+  z-index: 2;
+}
+main .team-section .team-members .card .profile-photo {
+  object-fit: cover;
+  position: absolute;
+  width: 109.09px;
+  aspect-ratio: 1;
+  border-radius: 109.09px;
+  transform: translate(calc(min(675px, 60vw) - 150px), 184.41px);
+  filter: drop-shadow(0 0 8px oklab(12.12% -0.011 0.01));
+  border: 4px solid black;
+  z-index: 4;
+}
+main .team-section .team-members .card .name {
+  width: min(675px, 60vw);
+  transform: translate(3px, 10px);
+}
+main .team-section .team-members .card .title {
+  transform: translate(28px, 77.625px);
+  width: calc(min(675px, 60vw) - 50px);
+  text-align: center;
+}
+main .team-section .team-members .card .card-bio {
+  width: calc(min(675px, 60vw) - 230.9px);
+  transform: translate(50px, 167.5px);
+  line-height: 1.25rem;
+  height: 120px;
+}
+
+/*# sourceMappingURL=styles.css.map */
